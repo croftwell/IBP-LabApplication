@@ -6,25 +6,21 @@
 </head>
 <body>
 
-    <form action="index.php" method="post">
-        <label> First Name: </label><br>
-        <input type="text" name="firstname" required><br>
+<form action="register.php" method="POST">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required><br><br>
 
-        <label> Last Name: </label><br>
-        <input type="text" name="lastname" required><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
 
-        <label> E-posta: </label><br>
-        <input type="email" name="email" required ><br>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br><br>
 
-
-        <label> Gender: </label><br>
-        <input type="radio" name="gender" value="male">
-        <label> Male</label><br>
-        <input type="radio" name="gender" value="female">
-        <label> Female </label><br><br>
-
-        <input type="submit" name="submit" value="Submit This Form">
-    </form>
+    <input type="submit" value="Submit">
+  </form>
 
   
 <?php
